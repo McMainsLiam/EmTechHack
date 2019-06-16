@@ -33,3 +33,15 @@ export const IntroTitle = styled.p`
   ${tw`text-xl lg:text-2xl font-sans text-white mb-2 xxl:w-3/4`};
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 `;
+
+export const SponsorTitle = styled.p`
+  ${tw`text-2xl lg:text-4xl font-sans text-white lg:mt-8 mt-0 mb-0`};
+  text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  display: inline;
+`;
+
+export const SponsorSubtitle = styled.p`
+  ${tw`text-xl lg:text-2xl font-sans text-white mt-0`};
+  text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  display: inline;
+`;
