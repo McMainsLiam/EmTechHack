@@ -10,10 +10,10 @@ import SVG from '../components/SVG';
 const FAQ = ({ children, offset }) => (
   <>
     <DividerMiddle bg="linear-gradient(to right, #25252b 0%, #1e2024 100%)" speed={-0.2} offset={0} factor={2} />
-    <FAQContent speed={0.4} offset={0} factor={2}>
+    <FAQContent speed={0.4} offset={0} factor={3}>
       <Inner>{children}</Inner>
     </FAQContent>
-    <Divider speed={0.1} offset={0} factor={2}>
+    <Divider speed={0.1} offset={0} factor={3}>
       <UpDown>
         <SVG icon="box" width={6} fill={colors.white} left="85%" top="75%" />
         <SVG icon="upDown" width={8} fill={colors.teal} left="70%" top="20%" />
