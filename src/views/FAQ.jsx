@@ -1,29 +1,24 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Divider, DividerMiddle } from "../elements/Dividers";
-import Content, { FAQContent } from "../elements/Content";
-import Inner from "../elements/Inner";
-import { UpDown, UpDownWide } from "../styles/animations";
-import { colors } from "../../tailwind";
-import SVG from "../components/SVG";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Divider, DividerMiddle } from '../elements/Dividers';
+import Content, { FAQContent } from '../elements/Content';
+import Inner from '../elements/Inner';
+import { UpDown, UpDownWide } from '../styles/animations';
+import { colors } from '../../tailwind';
+import SVG from '../components/SVG';
 
 const FAQ = ({ children, offset }) => (
   <>
-    <DividerMiddle
-      bg="linear-gradient(to right, #23262b 0%, #2d3138 100%)"
-      speed={-0.2}
-      offset={`${offset}.1`}
-      factor={2}
-    />
-    <FAQContent speed={0.4} offset={`${offset}.2`} factor={2}>
+    <DividerMiddle bg="linear-gradient(to right, #25252b 0%, #1e2024 100%)" speed={-0.2} offset={0} factor={2} />
+    <FAQContent speed={0.4} offset={0} factor={2}>
       <Inner>{children}</Inner>
     </FAQContent>
-    <Divider speed={0.1} offset={0.1} factor={2}>
+    <Divider speed={0.1} offset={0} factor={2}>
       <UpDown>
         <SVG icon="box" width={6} fill={colors.white} left="85%" top="75%" />
         <SVG icon="upDown" width={8} fill={colors.teal} left="70%" top="20%" />
         <SVG icon="triangle" width={8} stroke={colors.orange} left="25%" top="5%" />
-        <SVG icon="circle" hiddenMobile width={24} fill={colors.white} left="17%" top="60%" />
+        <SVG icon="circle" hiddenMobile width={24} fill={colors.green} left="17%" top="60%" />
       </UpDown>
       <UpDownWide>
         <SVG icon="arrowUp" hiddenMobile width={16} fill={colors.green} left="20%" top="90%" />
@@ -41,11 +36,11 @@ const FAQ = ({ children, offset }) => (
       <SVG icon="hexa" width={8} stroke={colors.yellow} left="80%" top="70%" />
     </Divider>
   </>
-);
+)
 
-export default FAQ;
+export default FAQ
 
 FAQ.propTypes = {
   children: PropTypes.node.isRequired,
-  offset: PropTypes.number.isRequired
-};
+  offset: PropTypes.number.isRequired,
+}

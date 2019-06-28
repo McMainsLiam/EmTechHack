@@ -21,6 +21,7 @@
     "mailtoui": "1.0.2",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
+    "react-burger-menu": "^2.6.10",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "react-spring": "^8.0.23",
