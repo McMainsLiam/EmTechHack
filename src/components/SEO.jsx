@@ -84,10 +84,8 @@ const Head = props => {
       <link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png" />
       <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
       <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
-      <meta name="gatsby-starter" content="Gatsby Starter Portfolio Cara" />
+      <meta name="EmTechHack" content="Emerging Tech Hack - UTD 2019" />
       <link rel="shortcut icon" href="favicon.ico" />
-      <meta name="msapplication-TileColor" content={config.backgroundColor} />
-      <meta name="msapplication-config" content="browserconfig.xml" />
       <meta name="description" content={description} />
       <meta name="image" content={image} />
       <meta property="og:locale" content={config.ogLanguage} />
