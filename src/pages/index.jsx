@@ -4,22 +4,22 @@ import tw from 'tailwind.macro'
 import { Parallax } from 'react-spring/renderprops-addons.cjs'
 
 // Components
-import { Link } from 'gatsby';
-import Layout from '../components/Layout';
-import ProjectCard from '../components/ProjectCard';
+import { Link } from 'gatsby'
+import Layout from '../components/Layout'
+import ProjectCard from '../components/ProjectCard'
 
 // Elements
-import Inner from '../elements/Inner';
-import { Title, BigTitle, Subtitle, IntroTitle, SponsorTitle, SponsorSubtitle } from '../elements/Titles';
+import Inner from '../elements/Inner'
+import { Title, BigTitle, Subtitle, IntroTitle, SponsorTitle, SponsorSubtitle } from '../elements/Titles'
 
 // Views
-import Hero from '../views/Hero';
-import Projects from '../views/Projects';
-import About from '../views/About';
-import Contact from '../views/Contact';
+import Hero from '../views/Hero'
+import Projects from '../views/Projects'
+import About from '../views/About'
+import Contact from '../views/Contact'
 
-import Navbar from '../components/Navbar';
-import { Button } from '../elements/Buttons';
+import Navbar from '../components/Navbar'
+import { Button } from '../elements/Buttons'
 import FAQ, { getGradientColorFromIndex } from '../model/FAQ'
 import config from '../model/config'
 
@@ -85,7 +85,11 @@ const Index = () => (
             <a href="https://discord.gg/dnzT7jt">Discord channel</a>.
           </ContactText>
           <ContactText>
-            Our code of conduct can also be found <a href="/emtechhack-code-of-conduct.pdf">here</a>.
+            Our code of conduct can also be found{' '}
+            <a target="_blank" href="/emtechhack-code-of-conduct.pdf">
+              here
+            </a>
+            .
           </ContactText>
         </Inner>
         <Footer>&copy; 2019 UTD Blockchain - Emerging Tech Hackathon</Footer>
