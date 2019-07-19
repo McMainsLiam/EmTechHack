@@ -32,7 +32,7 @@ const About = () => (
         </ContactText>
 
         <Link to="/faq">
-          <Button dark>Learn More</Button>
+          <Button dark>FAQ</Button>
         </Link>
         <ExternalLink href={config.signUpFormURL} target="_blank">
           <Button>Apply Now</Button>

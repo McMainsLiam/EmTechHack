@@ -63,7 +63,7 @@ const Index = () => (
         <IntroTitle>UTD Blockchain Presents</IntroTitle>
         <BigTitle>Emerging Tech Hackathon</BigTitle>
         <Subtitle>October 19th - 20th, 2019</Subtitle>
-        <Link to="/faq">
+        <Link to="/about">
           <Button dark>Learn More</Button>
         </Link>
         <ExternalLink href={config.signUpFormURL} target="_blank">
