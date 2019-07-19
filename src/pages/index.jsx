@@ -84,6 +84,9 @@ const Index = () => (
             You can also visit our <a href="http://www.utdcrypto.com/">website</a> or join our{' '}
             <a href="https://discord.gg/dnzT7jt">Discord channel</a>.
           </ContactText>
+          <ContactText>
+            Our code of conduct can also be found <a href="/emtechhack-code-of-conduct.pdf">here</a>.
+          </ContactText>
         </Inner>
         <Footer>&copy; 2019 UTD Blockchain - Emerging Tech Hackathon</Footer>
       </Contact>
