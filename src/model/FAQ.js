@@ -59,7 +59,7 @@ export default [
   },
   {
     title: 'Will there be prizes?',
-    content: `Of course! There will be over $1,000 in prizes for all of the best projects. Everyone who attends will also
+    content: `Of course! There will be over $2,000 in prizes for all of the best projects. Everyone who attends will also
             receive a free t-shirt designed specifically for the event.`,
   },
 ]
