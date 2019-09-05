@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 import React from 'react'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
@@ -7,7 +8,7 @@ import { Parallax } from 'react-spring/renderprops-addons.cjs'
 import Layout from '../components/Layout'
 
 // Elements
-import { BigTitle, Subtitle, Title } from '../elements/Titles'
+import { BigTitle, Subtitle, Title, PrizeTitle, PrizeSubtitle } from '../elements/Titles'
 
 import Navbar from '../components/Navbar'
 import About from '../views/About'
@@ -25,6 +26,8 @@ const ProjectsWrapper = styled.div`
     grid-template-columns: 1fr;
     grid-gap: 2rem;
   }
+  margin-top: 5vw;
+  margin-bottom: 5vw;
 `
 
 const SponsorCard = styled.div`
@@ -48,7 +51,27 @@ const FAQPage = () => (
       <Navbar offset={0}></Navbar>
       <About offset={0}>
         <BigTitle>Prizes</BigTitle>
-        <Title>Coming Soon!</Title>
+        <ProjectsWrapper>
+          <SponsorCard>
+            <SponsorImage src={require('../resources/oculus.webp')}></SponsorImage>
+            <PrizeTitle>First Place</PrizeTitle>
+            <PrizeSubtitle>Oculus Quest VR Headset (Each Hacker)</PrizeSubtitle>
+          </SponsorCard>
+
+          <SponsorCard>
+            <SponsorImage src={require('../resources/switch.png')}></SponsorImage>
+            <PrizeTitle>Second Place</PrizeTitle>
+            <PrizeSubtitle>Nintendo Switch Lite (Each Hacker)</PrizeSubtitle>
+          </SponsorCard>
+
+          <SponsorCard>
+            <SponsorImage src={require('../resources/tello.png')}></SponsorImage>
+            <PrizeTitle>Third Place</PrizeTitle>
+            <PrizeSubtitle>DJI Tello Programmable Drones (Each Hacker)</PrizeSubtitle>
+          </SponsorCard>
+        </ProjectsWrapper>
+
+        <Title>More Sponsored Prizes Coming Soon...</Title>
       </About>
     </Parallax>
   </>
