@@ -1,20 +1,20 @@
-import React from 'react'
-import styled from 'styled-components'
-import tw from 'tailwind.macro'
-import { Parallax } from 'react-spring/renderprops-addons.cjs'
-import { Link } from 'gatsby'
-import Layout from '../components/Layout'
-import { Title } from '../elements/Titles'
-import Navbar from '../components/Navbar'
-import HeroWide from '../views/HeroWide'
-import { Button } from '../elements/Buttons'
-import config from '../model/config'
+import React from "react";
+import styled from "styled-components";
+import tw from "tailwind.macro";
+import { Parallax } from "react-spring/renderprops-addons.cjs";
+import { Link } from "gatsby";
+import Layout from "../components/Layout";
+import { Title } from "../elements/Titles";
+import Navbar from "../components/Navbar";
+import HeroWide from "../views/HeroWide";
+import { Button } from "../elements/Buttons";
+import config from "../model/config";
 
 const ContactText = styled.p`
   ${tw`text-grey-light font-sans text-xl md:text-2xl lg:text-3xl`};
-`
+`;
 
-const ExternalLink = styled.a``
+const ExternalLink = styled.a``;
 
 const About = () => (
   <>
@@ -31,15 +31,21 @@ const About = () => (
           you're a veteran developer or a budding designer, EmTechHack has a place for you.
         </ContactText>
 
-        <Link to="/faq">
-          <Button dark>FAQ</Button>
-        </Link>
         <ExternalLink href={config.signUpFormURL} target="_blank">
           <Button>Apply Now</Button>
         </ExternalLink>
+        <Link to="/faq">
+          <Button dark>FAQ</Button>
+        </Link>
+        <Link to="/prizes">
+          <Button>Prizes</Button>
+        </Link>
+        <Link to="/sponsors">
+          <Button dark>Sponsors</Button>
+        </Link>
       </HeroWide>
     </Parallax>
   </>
-)
+);
 
-export default About
+export default About;

@@ -1,16 +1,16 @@
-import React from 'react'
-import styled from 'styled-components'
-import tw from 'tailwind.macro'
-import { Parallax } from 'react-spring/renderprops-addons.cjs'
+import React from 'react';
+import styled from 'styled-components';
+import tw from 'tailwind.macro';
+import { Parallax } from 'react-spring/renderprops-addons.cjs';
 
 // Components
-import Layout from '../components/Layout'
+import Layout from '../components/Layout';
 
 // Elements
-import { Title, SponsorTitle, SponsorSubtitle, BigTitle } from '../elements/Titles'
+import { Title, SponsorTitle, SponsorSubtitle, BigTitle } from '../elements/Titles';
 
-import Navbar from '../components/Navbar'
-import About from '../views/About'
+import Navbar from '../components/Navbar';
+import About from '../views/About';
 
 const ProjectsWrapper = styled.div`
   ${tw`flex flex-wrap justify-between mt-8`};
@@ -31,10 +31,13 @@ const SponsorCard = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
 `
 
 const SponsorImage = styled.img`
-  ${tw`max-w-full`};
+  width: 100%;
+  max-width: 200px;
+  height: auto;
 `
 
 const FAQPage = () => (
@@ -44,44 +47,23 @@ const FAQPage = () => (
     <Parallax pages={1}>
       <Navbar offset={0}></Navbar>
       <About offset={0}>
-        <BigTitle>Sponsors / Prizes</BigTitle>
+        <BigTitle>Sponsors</BigTitle>
         <ProjectsWrapper>
-        <Title>Coming Soon!</Title>
-          {/* <SponsorCard>
-            <SponsorImage src={require('../resources/sponsor-logos/CodeAuthority.png')}></SponsorImage>
-            <SponsorTitle>Nintendo Switch</SponsorTitle>
-            <SponsorSubtitle>1st Place</SponsorSubtitle>
-          </SponsorCard>
-
-          <SponsorCard>
-            <SponsorImage src={require('../resources/sponsor-logos/amazon.png')}></SponsorImage>
-            <SponsorTitle>Amazon Echo Dot</SponsorTitle>
-            <SponsorSubtitle>2nd Place</SponsorSubtitle>
-          </SponsorCard>
-
-          <SponsorCard>
-            <SponsorImage src={require('../resources/sponsor-logos/facebook.png')}></SponsorImage>
-            <SponsorTitle>100$ Amazon Gift Card</SponsorTitle>
-            <SponsorSubtitle>3rd Place</SponsorSubtitle>
-          </SponsorCard>
-
           <SponsorCard>
             <SponsorImage src={require('../resources/sponsor-logos/CodeAuthority.png')}></SponsorImage>
-            <SponsorTitle>Nintendo Switch</SponsorTitle>
-            <SponsorSubtitle>1st Place</SponsorSubtitle>
           </SponsorCard>
 
           <SponsorCard>
-            <SponsorImage src={require('../resources/sponsor-logos/amazon.png')}></SponsorImage>
-            <SponsorTitle>Amazon Echo Dot</SponsorTitle>
-            <SponsorSubtitle>2nd Place</SponsorSubtitle>
+            <SponsorImage src={require('../resources/sponsor-logos/github.png')}></SponsorImage>
           </SponsorCard>
 
           <SponsorCard>
-            <SponsorImage src={require('../resources/sponsor-logos/facebook.png')}></SponsorImage>
-            <SponsorTitle>100$ Amazon Gift Card</SponsorTitle>
-            <SponsorSubtitle>3rd Place</SponsorSubtitle>
-          </SponsorCard> */}
+            <SponsorImage src={require('../resources/sponsor-logos/sahrduwhite.png')}></SponsorImage>
+          </SponsorCard>
+
+          <SponsorCard>
+            <SponsorImage src={require('../resources/sponsor-logos/loogoaooswhite.png')}></SponsorImage>
+          </SponsorCard>
         </ProjectsWrapper>
       </About>
     </Parallax>

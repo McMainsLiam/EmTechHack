@@ -43,7 +43,7 @@ const Navbar = ({ offset }) => (
     <Link to="/faq">
       <NavbarButton>FAQ</NavbarButton>
     </Link>
-    <Link to="/sponsors">
+    <Link to="/prizes">
       <NavbarButton>Prizes</NavbarButton>
     </Link>
     <Link to="/sponsors">
