@@ -1,16 +1,16 @@
-import React from 'react';
-import styled from 'styled-components';
-import tw from 'tailwind.macro';
-import { Parallax } from 'react-spring/renderprops-addons.cjs';
+import React from "react";
+import styled from "styled-components";
+import tw from "tailwind.macro";
+import { Parallax } from "react-spring/renderprops-addons.cjs";
 
 // Components
-import Layout from '../components/Layout';
+import Layout from "../components/Layout";
 
 // Elements
-import { Title, SponsorTitle, SponsorSubtitle, BigTitle } from '../elements/Titles';
+import { Title, SponsorTitle, SponsorSubtitle, BigTitle } from "../elements/Titles";
 
-import Navbar from '../components/Navbar';
-import About from '../views/About';
+import Navbar from "../components/Navbar";
+import About from "../views/About";
 
 const ProjectsWrapper = styled.div`
   ${tw`flex flex-wrap justify-between mt-8`};
@@ -22,23 +22,27 @@ const ProjectsWrapper = styled.div`
     grid-gap: 3rem;
   }
   @media (max-width: 900px) {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
   }
-`
+`;
 
 const SponsorCard = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-`
+`;
 
 const SponsorImage = styled.img`
   width: 100%;
   max-width: 200px;
   height: auto;
-`
+
+  @media (max-width: 900px) {
+    max-width: 35vw;
+  }
+`;
 
 const FAQPage = () => (
   <>
@@ -50,24 +54,24 @@ const FAQPage = () => (
         <BigTitle>Sponsors</BigTitle>
         <ProjectsWrapper>
           <SponsorCard>
-            <SponsorImage src={require('../resources/sponsor-logos/CodeAuthority.png')}></SponsorImage>
+            <SponsorImage src={require("../resources/sponsor-logos/CodeAuthority.png")}></SponsorImage>
           </SponsorCard>
 
           <SponsorCard>
-            <SponsorImage src={require('../resources/sponsor-logos/github.png')}></SponsorImage>
+            <SponsorImage src={require("../resources/sponsor-logos/github.png")}></SponsorImage>
           </SponsorCard>
 
           <SponsorCard>
-            <SponsorImage src={require('../resources/sponsor-logos/sahrduwhite.png')}></SponsorImage>
+            <SponsorImage src={require("../resources/sponsor-logos/sahrduwhite.png")}></SponsorImage>
           </SponsorCard>
 
           <SponsorCard>
-            <SponsorImage src={require('../resources/sponsor-logos/loogoaooswhite.png')}></SponsorImage>
+            <SponsorImage src={require("../resources/sponsor-logos/loogoaooswhite.png")}></SponsorImage>
           </SponsorCard>
         </ProjectsWrapper>
       </About>
     </Parallax>
   </>
-)
+);
 
-export default FAQPage
+export default FAQPage;

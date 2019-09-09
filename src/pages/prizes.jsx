@@ -24,7 +24,9 @@ const ProjectsWrapper = styled.div`
   }
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
-    grid-gap: 2rem;
+    grid-gap: 1rem;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
   }
   margin-top: 5vw;
   margin-bottom: 5vw;
@@ -41,6 +43,10 @@ const SponsorImage = styled.img`
   width: 100%;
   max-width: 200px;
   height: auto;
+
+  @media (max-width: 900px) {
+    max-width: 100px;
+  }
 `
 
 const FAQPage = () => (
@@ -70,8 +76,6 @@ const FAQPage = () => (
             <PrizeSubtitle>DJI Tello Programmable Drones (Each Hacker)</PrizeSubtitle>
           </SponsorCard>
         </ProjectsWrapper>
-
-        <Title>More Sponsored Prizes Coming Soon...</Title>
       </About>
     </Parallax>
   </>
