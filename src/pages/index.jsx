@@ -66,9 +66,12 @@ const Index = () => (
         <Link to="/about">
           <Button dark>Learn More</Button>
         </Link>
-        <ExternalLink href={config.signUpFormURL} target="_blank">
+        <Link to="/schedule">
+          <Button>Schedule</Button>
+        </Link>
+        {/* <ExternalLink href={config.signUpFormURL} target="_blank">
           <Button>Apply Now</Button>
-        </ExternalLink>
+        </ExternalLink> */}
       </Hero>
 
       <Contact offset={1}>
