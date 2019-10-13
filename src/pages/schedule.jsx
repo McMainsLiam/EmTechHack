@@ -45,12 +45,9 @@ const Schedule = () => (
             <CustomTitle>1:00 pm</CustomTitle>
             <CustomSubtitle>Lunch</CustomSubtitle>
           </div>
-          <div style={{ width: '40%' }}>
+          <div style={{ width: '45%' }}>
             <CustomTitle>1:00 pm</CustomTitle>
-            <CustomSubtitle>Shardus Networking Session</CustomSubtitle>
-
-            <CustomTitle>2:00 pm</CustomTitle>
-            <CustomSubtitle>Shardus Event Presentation</CustomSubtitle>
+            <CustomSubtitle>Shardus Workshop/Networking</CustomSubtitle>
 
             <CustomTitle>5:30 pm</CustomTitle>
             <CustomSubtitle>Dinner</CustomSubtitle>
@@ -60,10 +57,13 @@ const Schedule = () => (
 
             <CustomTitle>9:30 pm</CustomTitle>
             <CustomSubtitle>Intro to Amazon Web Services</CustomSubtitle>
-          </div>
-          <div style={{ width: '40%' }}>
+
             <CustomTitle>8:00 am</CustomTitle>
             <CustomSubtitle>Breakfast</CustomSubtitle>
+          </div>
+          <div style={{ width: '40%' }}>
+            <CustomTitle>8:30 am</CustomTitle>
+            <CustomSubtitle>Zabo Workshop</CustomSubtitle>
 
             <CustomTitle>11:00 am</CustomTitle>
             <CustomSubtitle>Hacking Ends</CustomSubtitle>
