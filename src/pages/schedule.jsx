@@ -52,7 +52,7 @@ const Schedule = () => (
             <CustomTitle>5:30 pm</CustomTitle>
             <CustomSubtitle>Dinner</CustomSubtitle>
 
-            <CustomTitle>6:00 pm</CustomTitle>
+            <CustomTitle>6:30 pm</CustomTitle>
             <CustomSubtitle>Intro to Git Workshop</CustomSubtitle>
 
             <CustomTitle>9:30 pm</CustomTitle>
